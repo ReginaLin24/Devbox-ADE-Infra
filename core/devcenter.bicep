@@ -68,7 +68,7 @@ resource devboxDefinitions 'Microsoft.DevCenter/devcenters/devboxdefinitions@202
       id: '${devcenter.id}/galleries/default/images/${image[definition.image]}'
     }
     sku: {
-      name: '${compute[definition.compute]}${storage[definition.storage]}ssd_v2'   // e.g. general_i_8c32gb256ssd_v2
+      name: 'general_i_8c32gb256ssd_v2'   // e.g. general_i_8c32gb256ssd_v2
     }
     osStorageType: 'ssd_${storage[definition.storage]}gb'   //e.g. ssd_256gb
   }
